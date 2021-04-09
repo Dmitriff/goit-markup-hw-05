@@ -63,7 +63,9 @@
             ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br />
             ДЛЯ ВАШЕГО БИЗНЕСА
           </h1>
-          <button type="button" class="button primary">Заказать услугу</button>
+          <button class="button primary" type="button " data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
       <!--Особенности-->
@@ -114,7 +116,7 @@
                 />
                 <div>
                   <p class="title-bg">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЕ</p>
-                  <img src="/images/page3/bg-soft.png" alt="кодер" />
+                  <img src="./images/page3/bg-soft.png" alt="кодер" />
                 </div>
               </div>
             </li>
@@ -127,7 +129,7 @@
                 />
                 <div>
                   <p class="title-bg">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
-                  <img src="/images/page3/bg-soft.png" alt="кодер" />
+                  <img src="./images/page3/bg-soft.png" alt="кодер" />
                 </div>
               </div>
             </li>
@@ -140,7 +142,7 @@
                 />
                 <div>
                   <p class="title-bg">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
-                  <img src="/images/page3/bg-soft.png" alt="кодер" />
+                  <img src="./images/page3/bg-soft.png" alt="кодер" />
                 </div>
               </div>
             </li>
@@ -557,5 +559,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="btn-close" data-modal-close>
+          <svg class="icon-close" width="11px" height="11px">
+            <use href="./icon/sprite.svg#icon-CLOSE"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
