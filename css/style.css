@@ -169,7 +169,6 @@ header {
   align-items: baseline;
   padding-left: 0;
   margin-bottom: 0;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts .icon {
@@ -191,7 +190,7 @@ header {
   font-size: 14px;
   line-height: 1.14;
   text-decoration: none;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts .link:hover,
 .contacts .link:focus {
@@ -238,6 +237,7 @@ header {
 .social-icons-link:focus {
   background-color: var(--accent-color);
   fill: var(--white-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-icon ul {
   display: inline-flex;
@@ -313,8 +313,7 @@ header {
   cursor: pointer;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-btn.link:hover,
@@ -613,13 +612,13 @@ a:focus .overla {
   display: flex;
   text-align: center;
   padding-left: 0;
-
   margin-bottom: 0;
 }
 .compani-icons-item {
   margin-right: 30px;
   flex-basis: calc((100% - 60px) / 3);
 }
+
 .compani a {
   display: inline-flex;
   justify-content: center;
@@ -629,15 +628,16 @@ a:focus .overla {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: var(--bg-icon);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.compani-icons-link:hover .icon-compani,
-.compani-icons-link:focus .icon-compani {
+.compani-icons .link:hover .icon-compani,
+.compani-icons .link:focus .icon-compani {
   fill: var(--accent-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.compani-icons-link:hover,
-.compani-icons-link:focus {
+.compani-icons .link:hover,
+.compani-icons .link:focus {
   border: 1px solid var(--accent-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* address footer*/
@@ -671,7 +671,7 @@ a:focus .overla {
   color: rgba(255, 255, 255, 0.6);
   letter-spacing: 0.03em;
   text-decoration: none;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-nav .link:hover,
 .address-nav .link:focus {
@@ -715,6 +715,9 @@ footer .logo {
   display: inline-flex;
   text-align: center;
   background-color: var(--bg-icon-footer);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-icons-link {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -745,13 +748,11 @@ footer .logo {
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   visibility: visible;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibiliti 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
   opacity: 0;
-  visibility: hidden;
   pointer-events: none;
 }
 
@@ -781,4 +782,5 @@ footer .logo {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
+  transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
